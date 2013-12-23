@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>My Project: Исходный файл trace.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Структуры данных</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">trace.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="trace_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode:c; coding: utf-8 -*- */</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef TRACE_H_INCLUDED</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TRACE_H_INCLUDED</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common_8h.html" title="Типы данных, константы и прототипы функций общего назначения">common.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="structTraceStep.html">   19</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structTraceStep.html" title="Описание шага трассы">TraceStep</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="structTraceStep.html#a83a99c9f44c0bfeb42d168ef18e642ea">   21</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structTraceStep.html#a83a99c9f44c0bfeb42d168ef18e642ea" title="&#39;R&#39; - чтение, &#39;W&#39; - запись">op</a>; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="structTraceStep.html#ad32a1b2767d6357b841f1b3133d6f7e2">   22</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structTraceStep.html#ad32a1b2767d6357b841f1b3133d6f7e2" title="&#39;D&#39; - память данных, &#39;I&#39; - память инструкций">mem</a>; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="structTraceStep.html#a053513d6b196376989778f97b20639f2">   23</a></span>&#160;    <a class="code" href="common_8h.html#a7e38cacceb61ac4bc7fa4bd47608ca32">memaddr_t</a> <a class="code" href="structTraceStep.html#a053513d6b196376989778f97b20639f2" title="адрес в памяти">addr</a>; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="structTraceStep.html#a16af89c11141bcbdf8c4267085147bba">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structTraceStep.html#a16af89c11141bcbdf8c4267085147bba" title="размер операции (1, 2, 4, 8)">size</a>; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="structTraceStep.html#a29756dd4b3c33c763cf5e046815ce93f">   25</a></span>&#160;    <a class="code" href="structMemoryCell.html" title="Описание ячейки памяти">MemoryCell</a> <a class="code" href="structTraceStep.html#a29756dd4b3c33c763cf5e046815ce93f" title="данные для чтения/записи">value</a>[8]; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <a class="code" href="trace_8h.html#a9a263187e0d904d71f6572a29b858ecb" title="Описание шага трассы">TraceStep</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">struct </span><a class="code" href="structTrace.html" title="Дескриптор трассы">Trace</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structTrace.html" title="Дескриптор трассы">Trace</a> <a class="code" href="structTrace.html" title="Дескриптор трассы">Trace</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<a class="code" href="structTrace.html" title="Дескриптор трассы">Trace</a> *trace_open(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="structTrace.html#a28e78e0c1dd56160946774aad0ab1d8e" title="Путь к файлу">path</a>, FILE *<a class="code" href="structTrace.html#a11fd3188d5d485a3abafdcae28c28ac0" title="Файл, в который выводить ошибки">log_f</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="structTrace.html" title="Дескриптор трассы">Trace</a> *trace_close(<a class="code" href="structTrace.html" title="Дескриптор трассы">Trace</a> *t);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">int</span> trace_next(<a class="code" href="structTrace.html" title="Дескриптор трассы">Trace</a> *t);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="structTraceStep.html" title="Описание шага трассы">TraceStep</a> *trace_get(<a class="code" href="structTrace.html" title="Дескриптор трассы">Trace</a> *t);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * Local variables:</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> *  c-basic-offset: 4</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * End:</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> */</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по My Project. Последние изменения: Вт 17 Дек 2013 22:53:08. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>
