@@ -1,4 +1,0 @@
-CacheSim
-========
-
-A Cache Simulator
